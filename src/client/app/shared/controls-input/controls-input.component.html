@@ -1,0 +1,15 @@
+<div class="basic-float-container">
+  <div style="float: left; margin-right:5px;">
+    {{dropdownLabel}}
+  </div>
+
+  <div [ngStyle]="{'float':'left', 'margin-right':'10px'}" >
+
+    <select [ngStyle]="{'width': dropdownWidth + 'px'}" [(value)]="dropdownSelected" [disabled]="dropdownDisabled" >
+      <option *ngFor="let option of dropdownList" [ngValue]="option">{{option}}</option>
+    </select>
+  </div>
+
+  <div style="clear:both;"></div>
+
+</div>

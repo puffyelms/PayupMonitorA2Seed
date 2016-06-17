@@ -1,22 +1,32 @@
+/* For extra small nav bar  */
+.navbar-nav > li > a, .navbar-brand {
+  padding-top:2px !important;
+  padding-bottom:0 !important;
+  height: 24px;
+}
+.navbar {min-height:24px !important;}
+
+
 :host {
   border-color: #e1e1e1;
   border-style: solid;
   border-width: 0 0 1px;
   display: block;
-  height: 48px;
+  height: 24px;
   padding: 0 16px;
 }
 
-nav a {
-  color: #8f8f8f;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 48px;
-  margin-right: 20px;
-  text-decoration: none;
-  vertical-align: middle;
-}
+/*nav a {*/
+  /*color: #8f8f8f;*/
+  /*font-size: 14px;*/
+  /*font-weight: 500;*/
+  /*line-height: 48px;*/
+  /*margin-right: 20px;*/
+  /*text-decoration: none;*/
+  /*vertical-align: middle;*/
+/*}*/
 
-nav a.router-link-active {
-  color: #106cc8;
-}
+/*nav a.router-link-active {*/
+  /*color: #106cc8;*/
+/*}*/
+

@@ -4,7 +4,7 @@ import { HTTP_PROVIDERS} from '@angular/http';
 
 import { AboutComponent } from './+about/index';
 import { HomeComponent } from './+home/index';
-import { NameListService, NavbarComponent, ToolbarComponent } from './shared/index';
+import { NameListService, NavbarComponent, ToolbarComponent, ControlsComponent } from './shared/index';
 
 /**
  * This class represents the main application component. Within the @Routes annotation is the configuration of the
@@ -15,7 +15,7 @@ import { NameListService, NavbarComponent, ToolbarComponent } from './shared/ind
   selector: 'sd-app',
   viewProviders: [NameListService, HTTP_PROVIDERS],
   templateUrl: 'app.component.html',
-  directives: [ROUTER_DIRECTIVES, NavbarComponent, ToolbarComponent]
+  directives: [ROUTER_DIRECTIVES, NavbarComponent, ToolbarComponent, ControlsComponent]
 })
 @Routes([
   {
